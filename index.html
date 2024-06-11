@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Private</title>
+  <link rel="stylesheet" href="./css/reset.css" />
+  <link rel="stylesheet" href="./css/main.css" />
+  <link rel="shorcut icon" href="./images/favicon/favicon.ico" />
+</head>
+<body>
+  <!-- 헤더영역 -->
+  <header>
+    <!--width : 100% , 고정-->
+    <div class="header-inner">
+      <!--width:90%~80% 가운데정렬-->
+      <h1><a href="index.html">INTRO</a></h1>
+      <nav>
+        <ul class="gnb">
+          <li><a href="#">HOME</a></li>
+          <li><a href="#">I AM</a></li>
+          <li><a href="#">WORK</a></li>
+          <li><a href="#">BLOG</a></li>
+          <li><a href="#">CONTACT_ME</a></li>
+        </ul>
+      </nav>
+      <span class="menu-toggle-btn">
+        <span></span>
+        <span></span>
+        <span></span>
+      </span>
+    </div>
+  </header>
+
+  <!-- 이미지 슬라이드 영역 -->
+  <section class="slider">
+    <h2 class="hidden">개인캐릭터이미지</h2>
+    <img src="./images/p-images/slide03.jpg" alt="slide03" />
+  </section>
+
+  <!-- 디스플레이 영역 -->
+  <section class="display-section inner">
+    <h2 class="sec-title">I AM..</h2>
+    <!-- <p class="para">ddd</p> -->
+  </section>
+
+  <!-- 프로모션 영역 -->
+  <section class="promotion-section inner">
+    <ul class="promotion__list">
+      <li>
+        <img src="./images/s-images/promo01.png" alt="HOME" />
+        <h3>HOME</h3>
+        <p class="para">
+          Adobe PS, IL <br>
+          HTML5 CSS3 JQ JS <br>
+          Github notion tistory
+        </p>
+      </li>
+      <li>
+        <img src="./images/s-images/promo02.png" alt="I AM" />
+        <h3>I AM</h3>
+        <p class="para">
+          1992년생 <br>
+          부산외국어대학교 경영학과 졸업 <br>
+          (주)AMS 사원, 경리 근무 <br>
+        </p>
+      </li>
+      <li>
+        <img src="./images/s-images/promo03.png" alt="work" />
+        <h3>WORK</h3>
+        <p class="para">
+          Adobe PS, IL <br>
+          HTML5 CSS3 JQ JS <br>
+        </p>
+      </li>
+      <li>
+        <img src="./images/s-images/promo04.png" alt="blog" />
+        <h3>blog</h3>
+        <p class="para">
+          Github <br>
+          Notion<br>
+          Tistory <br>
+        </p>
+      </li>
+    </ul>
+  </section>
+
+  <!-- 구분선 : 회색선 -->
+  <hr class="divider1" />
+
+  <!-- 워크 영역 -->
+  <section class="work-section">
+    <h2 class="sec-title inner">work</h2>
+    <ul class="work__list">
+      <li>
+        <a href="#">
+          <div class="list__info">
+            <h3>HTML5</h3>
+            <span>WEB / 반응형</span>
+          </div>
+          <img src="" alt="포폴1 여행사" />
+        </a>
+      </li>
+
+      <li>
+        <a href="#">
+          <div class="list__info">
+            <h3>CSS3</h3>
+            <span>WEB / 반응형</span>
+          </div>
+          <img src="" alt="포폴2 제주에일">
+        </a>
+      </li>
+
+      <li>
+        <a href="#">
+          <div class="list__info">
+            <h3>JQ</h3>
+            <span>WEB / 반응형</span>
+          </div>
+          <img src="" alt="포폴3 스타벅스/카뱅">
+        </a>
+      </li>
+
+      <li>
+        <a href="#">
+          <div class="list__info">
+            <h3>JavaScript</h3>
+            <span>WEB / 반응형</span>
+          </div>
+          <img src="" alt="바닐라js toDoList 카드게임 계산기">
+        </a>
+      </li>
+    </ul>
+  </section>
+
+  <!-- 구분선 : 파란색선 -->
+  <hr class="divider2" />
+
+  <!-- 블로그 영역 -->
+  <section class="blog-section inner">
+    <h2 class="sec-title">blog</h2>
+    <ul class="blog__list">
+      <li>
+        <a href="https://github.com/holland29">
+          <img src="./images/p-images/logo-github.jpg" alt="blog01-github" />
+          <h4>Github</h4>
+        </a>
+      </li>
+      <li>
+        <a href="https://www.notion.so/holland29/dc3e880a367049ff8db3dea326e5e55c">
+          <img src="./images/p-images/logo-notion.jpg" alt="blog02-notion" />
+          <h4>Notion</h4>
+        </a>
+      </li>
+      <li>
+        <a href="https://blancoo27.tistory.com/">
+          <img src="./images/p-images/logo-tistory.jpg" alt="blog03-tistory" />
+          <h4>Tistory</h4>
+        </a>
+      </li>
+    </ul>
+  </section>
+
+  <!-- 콘텍트 영역 -->
+  <section class="contact-section inner">
+    <h2 class="sec-title">Contact</h2>
+    <div class="contact__form">
+      <form action="#">
+        <fieldset>
+          <legend class="hidden">contact</legend>
+          <div class="box1">
+            <label for="user-name" class="hidden">name</label>
+            <input type="text" id="user-name" placeholder="Name" />
+
+            <label for="user-phone" class="hidden">phone</label>
+            <input type="tel" id="user-phone" placeholder="Phone" />
+
+            <label for="user-email" class="hidden">email</label>
+            <input type="email" id="user-email" placeholder="Email Address" />
+          </div>
+          <div class="box2">
+            <textarea name="message" id="message" placeholder="Message"></textarea>
+          </div>
+        </fieldset>
+        <button type="submit">send message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- 푸터 영역 -->
+  <footer>
+    <!-- 구글지도 -->
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d404730.56789656903!2d126.4002587734375!3d37.57961700000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca2c74aeddea1%3A0x8b3046532cc715f6!2z6rK967O16raB!5e0!3m2!1sko!2skr!4v1682042934177!5m2!1sko!2skr"
+      width="600" height="450" style="border: 0" allowfullscreen="" loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+    <p>copyright&copy;2024. All rights reserved.</p>
+  </footer>
+
+  <!-- script -->
+  <script src="./js/jquery.min.js"></script>
+  <script src="./js/menu.js"></script>
+</body>
+
+</html>
