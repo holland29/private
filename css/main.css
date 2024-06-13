@@ -8,7 +8,7 @@
   list-style: none;
 }
 
-/* 공통 */
+/* COMMON */
 .inner {
   width: 90%;
   max-width: 1132px;
@@ -46,19 +46,19 @@
 }
 
 
-/* 모바일 영역------------------------------------------- */
-/* 모바일 헤더영역 width : 100% , 고정 */
+/* MOBILE */
+/* WIDTH: 100% */
 header {
   width: 100%;
   height: 50px;
   position: fixed;
-  /*nav기준,고정*/
+  /* nav 기준 */
   background: #fff;
   box-shadow: 0 10px 10px rgba(138, 138, 138, 0.1);
   z-index: 10;
 }
 
-/* 가운데정렬 width:90%*/
+/* WIDTH: 90%, ALIGN: CENTER */
 header .header-inner {
   width: 90%;
   margin: auto;
@@ -68,7 +68,7 @@ header .header-inner {
   height: 50px;
 }
 
-/* 모바일 로고 */
+/* MOBILE LOGO */
 header .header-inner h1 a {
   color: #3f51b5;
   text-transform: uppercase;
@@ -76,7 +76,7 @@ header .header-inner h1 a {
   /*26px*/
 }
 
-/* 모바일 메뉴 */
+/* MOBILE MENU */
 header .header-inner nav {
   position: absolute;
   top: 100%;
@@ -103,7 +103,7 @@ header .header-inner nav .gnb li a {
   text-indent: 20px;
 }
 
-/* 모바일 전체메뉴토글버튼 */
+/* MOBILE MENU-TOGGLE */
 header .header-inner .menu-toggle-btn {
   display: block;
   width: 20px;
@@ -121,14 +121,14 @@ header .header-inner .menu-toggle-btn span {
   background: #3f51b5;
 }
 
-/* 모바일 이미지 슬라이드 영역 */
+/* MOBILE SLIDE | BANNER */
 .slider img {
   width: 100%;
   max-width: 100%;
   margin-top: 50px;
 }
 
-/* 모바일 디스플레이 영역 */
+/* MOBILE DISPLAY */
 .display-section {
   text-align: center;
   margin-top: 50px;
@@ -138,28 +138,28 @@ header .header-inner .menu-toggle-btn span {
   margin-bottom: 30px;
 }
 
-/* 모바일 프로모션 영역 */
-.promotion-section {
+/* MOBILE MENU */
+.menu-section {
   margin-top: 50px;
 }
 
-.promotion-section ul li {
+.menu-section ul li {
   text-align: center;
   margin-top: 30px;
 }
 
-.promotion-section ul li img {
+.menu-section ul li img {
   height: 50px;
 }
 
-.promotion-section ul li h3 {
+.menu-section ul li h3 {
   color: #3f51b5;
   text-transform: uppercase;
   font-weight: 400;
   margin: 20px 0 10px;
 }
 
-/* 모바일 워크 영역 */
+/* MOBILE WORK */
 .work-section h2 {
   text-align: center;
   margin-bottom: 50px;
@@ -174,13 +174,13 @@ header .header-inner .menu-toggle-btn span {
   max-width: 100%;
 }
 
-/* 모바일 - 마우스 호버하면 파란배경 */
+/* MOBILE: cursor: pointer; > blue-bg */
 .work-section ul li a {
   display: block;
   width: 100%;
   height: 100%;
   position: relative;
-  /*info, 파란배경기준*/
+  /*info, blue-bg 기준*/
 }
 
 .work-section ul li a::before {
@@ -200,7 +200,7 @@ header .header-inner .menu-toggle-btn span {
   opacity: 0.8;
 }
 
-/* 모바일 - info 마우스 호버했을 때 위에서 아래로 등장 */
+/* MOBILE-info:hover; top>down */
 .work-section ul li a .list__info {
   position: absolute;
   top: 0px;
@@ -228,7 +228,7 @@ header .header-inner .menu-toggle-btn span {
 }
 
 
-/* 모바일 블로그 영역 */
+/* MOBILE BLOG */
 .blog-section h2 {
   text-align: center;
   margin-bottom: 50px;
@@ -262,7 +262,7 @@ header .header-inner .menu-toggle-btn span {
   /*13px*/
 }
 
-/* 모바일 콘텍트 영역 */
+/* MOBILE CONTACT */
 .contact-section h2 {
   text-align: center;
   margin-bottom: 50px;
@@ -298,7 +298,7 @@ header .header-inner .menu-toggle-btn span {
   margin-top: 30px;
 }
 
-/* 모바일 푸터 영역 */
+/* MOBILE FOOTER */
 footer {
   text-align: center;
   width: 100%;
@@ -318,10 +318,10 @@ footer p {
   font-size: 2vw;
 }
 
-/* 태블릿 영역-------------------------------------------- */
+/* TABLET */
 @media all and (min-width : 768px) {
 
-  /* 탭 헤더영역 - 메뉴*/
+  /* TAB HEADER-MN */
   header .header-inner nav {
     position: static;
     width: auto;
@@ -343,32 +343,32 @@ footer p {
     text-indent: 0px;
   }
 
-  /* 탭 전체메뉴토글버튼 */
+  /* TAB *MENU-TOGGLE BTN */
   header .header-inner .menu-toggle-btn {
     display: none;
   }
 
-  /* 탭 디스플레이 영역 */
+  /* TAB DISPLAY */
   .display-section p {
     line-height: 2;
   }
 
-  /* 탭 프로모션 영역 */
-  .promotion-section {
+  /* TAB MENU */
+  .menu-section {
     margin-top: 100px;
   }
 
-  .promotion-section ul {
+  .menu-section ul {
     display: flex;
     justify-content: space-between;
   }
 
-  .promotion-section ul li {
+  .menu-section ul li {
     margin-top: 0;
     width: 23%;
   }
 
-  /* 탭 워크 영역 */
+  /* TAB WORK */
   .work-section ul {
     display: flex;
     flex-flow: row wrap;
@@ -378,7 +378,7 @@ footer p {
     width: 50%;
   }
 
-  /* 탭 블로그 영역 */
+  /* TAB BLOG */
   .blog-section ul {
     display: flex;
     justify-content: space-between;
@@ -388,7 +388,7 @@ footer p {
     width: 32%;
   }
 
-  /* 탭 콘텍트 영역 */
+  /* TAB CONTACT */
   .contact-section .contact__form form fieldset {
     display: flex;
     justify-content: space-between;
@@ -413,19 +413,19 @@ footer p {
     margin-top: 10px;
   }
 
-  /* 탭 푸터 영역 */
+  /* TAB FOOTER */
   footer iframe {
     height: 400px;
   }
 
 }
 
-/*tab-end*/
+/* //TAB END */
 
-/* PC영역------------------------------------------------- */
+/* -------- PC --------- */
 @media all and (min-width : 1132px) {
 
-  /* PC 디스플레이 영역 */
+  /* PC DISPLAY */
   .display-section {
     display: flex;
     justify-content: space-between;
@@ -452,7 +452,7 @@ footer p {
     left: -15px;
   }
 
-  /* PC 워크 영역 */
+  /* PC WORK */
   .work-section h2 {
     text-align: left;
   }
@@ -461,7 +461,7 @@ footer p {
     width: 25%;
   }
 
-  /* PC 블로그 영역 */
+  /* PC BLOG */
   .blog-section {
     display: flex;
     justify-content: space-between;
@@ -471,7 +471,7 @@ footer p {
     width: 70%;
   }
 
-  /* PC 콘텍트 영역 */
+  /* PC CONTACT */
   .contact-section {
     display: flex;
     justify-content: space-between;
@@ -481,7 +481,7 @@ footer p {
     width: 70%;
   }
 
-  /* PC 푸터 영역 */
+  /* PC FOOTER */
   footer iframe {
     height: 500px;
   }
@@ -491,5 +491,4 @@ footer p {
     /*14px*/
   }
 }
-
-/*pc-end*/
+/* //PC END */
